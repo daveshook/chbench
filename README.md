@@ -4,3 +4,4 @@ This is a demonstration of Materialize on CH-benCHmark—a mashup of TPC-C and T
 
 Documentation: https://materialize.com/docs/demos/business-intelligence/
 
+[![Open Gitpod workspace](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/daveshook/chbench)
