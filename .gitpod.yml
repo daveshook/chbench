@@ -17,7 +17,7 @@ image:
 tasks:
   - name: Pre-load docker image to workspace 
     command: materialize/materialized:v0.26.4
-    command: ysql/mysql-server:8.0.27
+    command: mysql/mysql-server:8.0.27
     command: confluentinc/cp-zookeeper:7.2.0
     command: confluentinc/cp-kafka:7.2.0
     command: confluentinc/cp-schema-registry:7.2.0
