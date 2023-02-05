@@ -16,28 +16,28 @@ image:
 
 tasks:
   - name: Pre-load docker image to workspace 
-    command: materialize/materialized:v0.26.4
+    command: docker pull materialize/materialized:v0.26.4
 
   - name: Pre-load docker image to workspace 
-    command: mysql/mysql-server:8.0.27
+    command: docker pull mysql/mysql-server:8.0.27
 
   - name: Pre-load docker image to workspace 
-    command: confluentinc/cp-zookeeper:7.2.0
+    command: docker pull confluentinc/cp-zookeeper:7.2.0
 
   - name: Pre-load docker image to workspace 
-    command: confluentinc/cp-kafka:7.2.0
+    command: docker pull confluentinc/cp-kafka:7.2.0
 
   - name: Pre-load docker image to workspace 
-    command: confluentinc/cp-schema-registry:7.2.0
+    command: docker pull confluentinc/cp-schema-registry:7.2.0
 
   - name: Pre-load docker image to workspace 
-    command: debezium/connect:1.8
+    command: docker pull debezium/connect:1.8
 
   - name: Pre-load docker image to workspace 
-    command: materialize/cli:v0.26.4
+    command: docker pull materialize/cli:v0.26.4
 
   - name: Pre-load docker image to workspace 
-    command: metabase/metabase:v0.41.5
+    command: docker pull metabase/metabase:v0.41.5
 
   - name: Install docker-compose version 2.4.1 
     command: sudo curl -SL https://github.com/docker/compose/releases/download/v2.4.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
