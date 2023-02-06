@@ -16,7 +16,7 @@ image:
 
 tasks:
   - name: Pre-load docker image to workspace 
-    command: docker pull materialize/materialized:v0.26.4
+    command: docker pull materialize/materialized:v0.42.3
 
   - name: Pre-load docker image to workspace 
     command: docker pull mysql/mysql-server:8.0.27
@@ -34,10 +34,10 @@ tasks:
     command: docker pull debezium/connect:1.8
 
   - name: Pre-load docker image to workspace 
-    command: docker pull materialize/chbenchmark:v0.26.4
+    command: docker pull materialize/chbenchmark:v0.42.3
 
   - name: Pre-load docker image to workspace 
-    command: docker pull materialize/cli:v0.26.4
+    command: docker pull materialize/cli:v0.42.3
 
   - name: Pre-load docker image to workspace 
     command: docker pull metabase/metabase:v0.41.5
