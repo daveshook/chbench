@@ -34,6 +34,9 @@ tasks:
     command: docker pull debezium/connect:1.8
 
   - name: Pre-load docker image to workspace 
+    command: docker pull materialize/chbenchmark:v0.26.4
+
+  - name: Pre-load docker image to workspace 
     command: docker pull materialize/cli:v0.26.4
 
   - name: Pre-load docker image to workspace 
