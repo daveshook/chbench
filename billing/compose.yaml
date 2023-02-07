@@ -3,7 +3,7 @@ services:
     image: materialize/materialized:v0.42.3
     init: true
     volumes:
-      - db-data:/share/billing-demo/data
+      - ${PWD}/db-data:/share/billing-demo/data
     ports:
       - 6875:6875
     healthcheck: {test: curl -f localhost:6875, interval: 1s, start_period: 30s}
@@ -57,7 +57,7 @@ services:
       - --message-count=1000
       - --partitions=1
     volumes:
-      - db-data:/share/billing-demo/data
+      - ${PWD}/db-data:/share/billing-demo/data
     depends_on:
       kafka: {condition: service_healthy}
       schema-registry: {condition: service_healthy}
